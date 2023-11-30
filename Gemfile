@@ -1,5 +1,7 @@
 source "https://rubygems.org"
 
+gem 'rubocop', '>= 1.0', '< 2.0'
+
 ruby "3.2.2"
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
@@ -65,3 +67,4 @@ group :test do
   gem "capybara"
   gem "selenium-webdriver"
 end
+

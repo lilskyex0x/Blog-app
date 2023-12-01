@@ -14,20 +14,17 @@
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
-  - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
   - [Prerequisites](#prerequisites)
   - [Setup](#setup)
   - [Install](#install)
   - [Usage](#usage)
   - [Run tests](#run-tests)
-  - [Deployment](#deployment)
 - [👥 Authors](#authors)
 - [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
 - [⭐️ Show your support](#support)
 - [🙏 Acknowledgements](#acknowledgements)
-- [❓ FAQ (OPTIONAL)](#faq)
 - [📝 License](#license)
 
 <!-- PROJECT DESCRIPTION -->
@@ -59,14 +56,6 @@
 - **Functional website**
 - **Database**
 - **Unit Testing**
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- LIVE DEMO -->
-
-## 🚀 Live Demo <a name="live-demo"></a>
-
-- Not live yet
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -117,10 +106,6 @@ run the result on the terminal through:
 ### Run tests
 
 No tests available.
-
-### Deployment
-
-Not deployed
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

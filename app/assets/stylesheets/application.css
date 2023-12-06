@@ -1,15 +1,58 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
- * vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- *
- *= require_tree .
- *= require_self
- */
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Franklin Gothic Medium', Arial, sans-serif;
+}
+
+.container {
+  width: 620px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.user-card {
+  width: 100%;
+  background-color: #b3d7fa;
+  border: 1px solid #dee2e6;
+  padding: 10px;
+  margin: 10px 0 10px 0;
+  border-radius: 5px;
+}
+
+.user-card a {
+  text-decoration: none;
+  color: #333;
+}
+
+.post {
+  margin-bottom: 20px;
+}
+
+.post h2 {
+  margin: 0;
+}
+
+.post-info {
+  font-size: 0.9em;
+  color: #888;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.user-info,
+.post {
+  margin-bottom: 20px;
+}

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User's Posts</title>
+</head>
+<body>
+    <h1><%= @user.name %>'s Posts</h1>
+    <% @posts.each do |post| %>
+        <div class="post">
+            <h2><%= link_to post.title, user_post_path(@user, post) %></h2>
+            <p><%= post.text %></p>
+            <p class="post-info">Likes: <%= post.likes_counter %></p>
+            <p class="post-info">Comments: <%= post.comments_counter %></p>
+            <% post.recent_comments.each do |comment| %>
+              <p class="post-info">Comment: <%= comment.text %></p>
+            <% end %>
+        </div>
+    <% end %>
+</body>
+</html>

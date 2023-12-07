@@ -79,7 +79,6 @@ body {
   border: 1px solid #dee2e6;
   padding: 10px;
   border-radius: 5px;
-
 }
 
 .post-wrapper {
@@ -96,9 +95,5 @@ body {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 20px;
-}
-
-.post {
   margin-bottom: 20px;
 }

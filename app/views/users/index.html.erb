@@ -8,9 +8,13 @@
         <h1>Users</h1>
         <p>Placeholder text</p>
         <% @users.each do |user| %>
-        <div class="user-card">
-            <%= link_to user.name, user_path(user) %>
-        </div>
+            <div class="user-card">
+              <% if user.photo.present? %>
+                <img class="user-photo" src="<%= asset_path(user.photo) %>">
+              <% end %>
+              <%= link_to user.name, user_path(user) %>
+              <p>Number of posts: <%= user.posts_counter %></p>
+            </div>
         <% end %>
     </div>
 </body>

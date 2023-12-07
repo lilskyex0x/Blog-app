@@ -32,9 +32,9 @@ RSpec.describe 'Posts', type: :request do
       expect(response).to render_template('posts/show')
     end
 
-    it 'should include the placeholder' do
+    it 'should include the placeholder text' do
       get "/users/#{user.id}/posts/#{post.id}"
-      expect(response.body).to include(user.name)
+      expect(response.body).to include('Placeholder text')
     end
   end
 end

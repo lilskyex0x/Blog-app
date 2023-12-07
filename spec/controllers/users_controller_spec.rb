@@ -1,10 +1,10 @@
 require 'rails_helper'
 
-RSpec.describe UsersController, type: :controller do
+RSpec.describe 'Users', type: :request do
+  let!(:user) { User.create(name: 'Lilsnow') }
   describe 'GET #index' do
     before do
-      User.create(name: 'Lilsnow')
-      get :index
+      get '/users'
     end
 
     it 'responds successfully' do
@@ -19,8 +19,8 @@ RSpec.describe UsersController, type: :controller do
       expect(response).to render_template :index
     end
 
-    it 'includes placeholder text' do
-      expect(assigns(:users)).to include(User.find_by(name: 'Lilsnow'))
+    it 'includes placeholder text in the response body' do
+      expect(response.body).to include('Placeholder text')
     end
   end
 end

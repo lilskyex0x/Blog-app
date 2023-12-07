@@ -116,7 +116,7 @@ No tests available.
 👤 **Aung Pyae Khant**
 
 - GitHub: [@lilskyex0x](https://github.com/lilskyex0x)
-- LinkedIn: [Aung Pyae Khant](www.linkedin.com/in/aung-pyae-khant-932342251)
+- LinkedIn: [Aung Pyae Khant](https://www.linkedin.com/in/aung-pyae-khant-932342251)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

@@ -60,13 +60,15 @@ body {
 }
 
 .button {
-  display: inline-block;
+  width: 50%;
   padding: 10px 20px;
   color: #fff;
   background-color: #007bff;
   border: none;
   border-radius: 5px;
+  text-align: center;
   text-decoration: none;
+  margin-left: 125px;
 }
 
 .card-container {
@@ -77,17 +79,18 @@ body {
   justify-content: center;
   background-color: #b3d7fa;
   border: 1px solid #dee2e6;
+  margin-top: 50px;
   padding: 10px;
   border-radius: 5px;
 }
 
 .post-wrapper {
-  width: 800px;
+  width: 600px;
   background-color: antiquewhite;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 20px;
+  padding: 20px 50px 20px 50px;
 }
 
 .user-info {
@@ -96,4 +99,24 @@ body {
   align-items: center;
   justify-content: space-between;
   margin-bottom: 20px;
+  padding-right: 7.5rem;
+}
+
+.allPost-info img,
+.user-info img {
+  width: 200px;
+}
+
+.allPost-info h1,
+.user-info h1 {
+  font-size: 3rem;
+}
+
+.allPost-info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  padding-right: 3rem;
 }

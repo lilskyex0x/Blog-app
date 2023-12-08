@@ -10,7 +10,7 @@
         <% @users.each do |user| %>
             <div class="user-card">
               <% if user.photo.present? %>
-                <img class="user-photo" src="<%= asset_path(user.photo) %>">
+                <%= image_tag url_for(user.photo), class: "user-photo" %>
               <% end %>
               <%= link_to user.name, user_path(user) %>
               <p>Number of posts: <%= user.posts_counter %></p>

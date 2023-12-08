@@ -8,14 +8,14 @@
       <div class="post-wrapper">
         <div class="user-info">
           <% if @user.photo.present? %>
-            <img src="<%= asset_path(@user.photo) %>" style="width: 100px">
+            <img src="<%= asset_path(@user.photo) %>">
           <% end %>
           <h1><%= @user.name %></h1>
         </div>
         <p><%= @user.bio %></p>
         <% @user.recent_posts.each do |post| %>
           <div class="post">
-            <h2><%= link_to post.title, post_path(post) %></h2>
+            <h2><%= link_to post.title, user_post_path(@user, post) %></h2>
             <p><%= post.text %></p>
             <p class="post-info">Likes: <%= post.likes_counter %></p>
             <p class="post-info">Comments: <%= post.comments_counter %></p>

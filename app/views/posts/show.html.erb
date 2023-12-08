@@ -13,6 +13,18 @@
                 <p><%= @post.text %></p>
                 <p class="post-info">Likes: <%= @post.likes_counter %></p>
                 <p class="post-info">Comments: <%= @post.comments_counter %></p>
+                <div class="like-cmt-container">
+                  <%= form_for [@post, current_user.comments.build], html: { class: "cmt-form" } do |f| %>
+                    <%= f.label :text %>
+                    <%= f.text_area :text %>
+
+                    <%= f.submit "Create Comment", class: "cmt-submit" %>
+                  <% end %>
+
+                  <%= button_to post_likes_path(@post), method: :post do %>
+                    <i class="fas fa-thumbs-up"></i>
+                  <% end %>
+                </div>
                 <% @post.recent_comments.each do |comment| %>
                     <p class="post-info">Comment: <%= comment.text %></p>
                 <% end %>

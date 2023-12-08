@@ -7,7 +7,13 @@ Rails.application.routes.draw do
   # Routes for posts
   get '/users/:user_id/posts', to: 'posts#index', as: 'user_posts'
   get '/users/:user_id/posts/:id', to: 'posts#show', as: 'user_post'
+  post '/users/:user_id/posts', to: 'posts#create'
+
+  resources :posts do
+    resources :comments
+    resources :likes, only: [:create]
+  end
 
   get "up" => "rails/health#show", as: :rails_health_check
-  resources :posts
+  
 end

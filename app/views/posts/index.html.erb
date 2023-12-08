@@ -12,6 +12,16 @@
                 <% end %>
                 <h1><%= @user.name %>'s Posts</h1>
             </div>
+            <!-- Form for creating a new post -->
+            <%= form_for @new_post, url: user_posts_path(@user), html: { class: "form-container" } do |f| %>
+                <%= f.label :title %>
+                <%= f.text_field :title %>
+
+                <%= f.label :text %>
+                <%= f.text_area :text %>
+
+                <%= f.submit "Create Post", class: "create-btn" %>
+            <% end %>
             <% @posts.each do |post| %>
                 <div class="post">
                     <h2><%= link_to post.title, user_post_path(@user, post) %></h2>

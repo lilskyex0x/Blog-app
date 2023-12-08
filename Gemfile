@@ -6,6 +6,8 @@ ruby '3.2.2'
 
 gem 'faker'
 
+gem 'font-awesome-sass', '~> 5.15.4'
+
 gem 'rails-controller-testing'
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"

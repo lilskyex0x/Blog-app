@@ -15,6 +15,12 @@ RSpec.describe 'User Post Index', type: :feature do
     expect(page).to have_content(@user.name)
   end
 
+  it 'displays the number of posts the user has written' do
+    visit user_posts_path(@user)
+  
+    expect(page).to have_content("Total Posts: #{@user.posts.count}")
+  end
+
   it 'displays a post title, body, comment count, and like count' do
     visit user_posts_path(@user)
 

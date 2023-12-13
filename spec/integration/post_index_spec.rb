@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe "User Post Index", type: :feature do
+RSpec.describe 'User Post Index', type: :feature do
   before do
     @user = User.create!(name: 'testuser', photo: 'https://unsplash.com/photos/F_-0BxGuVvo', posts_counter: 0)
     @post = @user.posts.create!(title: 'Test Post', text: 'This is a test post.')

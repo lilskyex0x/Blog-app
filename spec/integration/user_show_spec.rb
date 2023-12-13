@@ -1,8 +1,9 @@
 require 'rails_helper'
 
-RSpec.describe "User show page", type: :feature do
+RSpec.describe 'User show page', type: :feature do
   before do
-    @user = User.create!(name: 'user1', photo: 'https://unsplash.com/photos/F_-0BxGuVvo', bio: 'This is a bio', posts_counter: 3)
+    @user = User.create!(name: 'user1', photo: 'https://unsplash.com/photos/F_-0BxGuVvo', bio: 'This is a bio',
+                         posts_counter: 3)
     @post1 = Post.create!(author: @user, title: 'Post 1', comments_counter: 0, likes_counter: 0)
     @post2 = Post.create!(author: @user, title: 'Post 2', comments_counter: 0, likes_counter: 0)
     @post3 = Post.create!(author: @user, title: 'Post 3', comments_counter: 0, likes_counter: 0)

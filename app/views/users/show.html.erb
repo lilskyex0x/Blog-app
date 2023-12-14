@@ -7,8 +7,8 @@
     <section class="card-container">
       <div class="post-wrapper">
         <div class="user-info">
-          <% if @user.photo.present? %>
-            <img src="<%= asset_path(@user.photo) %>">
+          <% if @user.image.attached? %>
+            <%= image_tag @user.image, class: "user-photo" %>
           <% end %>
           <h1><%= @user.name %></h1>
         </div>

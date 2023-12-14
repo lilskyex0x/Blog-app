@@ -21,7 +21,7 @@
                     <%= f.submit "Create Comment", class: "cmt-submit" %>
                   <% end %>
 
-                  <%= button_to post_likes_path(@post), method: :post do %>
+                  <%= button_to create_post_like_path(@post), method: :post do %>
                     <i class="fas fa-thumbs-up"></i>
                   <% end %>
                 </div>

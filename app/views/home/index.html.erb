@@ -1,0 +1,8 @@
+<h1>Welcome to my application!</h1>
+
+<% if user_signed_in? %>
+  <p>Welcome, <%= current_user.email %>!</p>
+  <%= link_to 'Sign out', logout_path, method: :delete %>
+<% else %>
+  <%= link_to 'Sign in', login_path %>
+<% end %>

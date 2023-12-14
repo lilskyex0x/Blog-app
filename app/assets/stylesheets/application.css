@@ -4,6 +4,126 @@ body {
   box-sizing: border-box;
   text-decoration: none;
   font-family: 'Franklin Gothic Medium', Arial, sans-serif;
+  background-image: url('https://images.unsplash.com/photo-1470790376778-a9fbc86d70e2?q=80&w=1904&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.notice {
+  display: flex;
+  justify-content: center;
+  color: aliceblue;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+}
+
+.alert {
+  display: flex;
+  justify-content: center;
+  color: red;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+}
+
+.title-h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.login-form {
+  width: 300px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 2px solid #ff45ff;
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(5px);
+  box-shadow: 20px 20px 60px rgba(0, 0, 0, 0.2), -20px -20px 60px rgba(255, 255, 255, 0.4);
+  color: white;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"],
+.login-form input[type="email"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.login-form button {
+  width: 100%;
+  background-color: #4caf50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+}
+
+.login-form button:hover {
+  opacity: 0.8;
+}
+
+.actions {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.submit-button {
+  width: 100%;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 10px;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: darkblue;
+}
+
+.center-links {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 20px;
+  border: 2px solid #4dd3f4;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(5px);
+  box-shadow: 20px 20px 60px rgba(0, 0, 0, 0.2), -20px -20px 60px rgba(255, 255, 255, 0.4);
+  margin: 20px 600px 0 600px;
+}
+
+.center-links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s ease;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add this line */
+}
+
+.user-card a {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: #333;
+}
+
+.center-links a:hover {
+  color: #ff45ff; /* darker blue */
 }
 
 .container {
@@ -13,6 +133,8 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .user-card {
@@ -21,17 +143,30 @@ body {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  background-color: #b3d7fa;
+  background-color: #fffbb6;
   border: 1px solid #dee2e6;
   padding: 10px;
   margin: 10px 0 10px 0;
   border-radius: 5px;
 }
 
-.user-card a {
-  font-size: 1.5rem;
+.logout-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
   text-decoration: none;
-  color: #333;
+  display: inline-block;
+  border-radius: 10px;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.logout-button:hover {
+  background-color: darkblue;
 }
 
 .user-card p {
@@ -72,22 +207,23 @@ body {
 }
 
 .card-container {
-  width: 100%;
+  position: relative;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  background-color: #b3d7fa;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(5px);
+  box-shadow: 20px 20px 60px rgba(0, 0, 0, 0.2), -20px -20px 60px rgba(255, 255, 255, 0.4);
   border: 1px solid #dee2e6;
-  margin-top: 50px;
+  margin: 50px 100px 0 100px;
   padding: 10px;
   border-radius: 5px;
 }
 
 .post-wrapper {
   width: 600px;
-  position: relative;
-  background-color: antiquewhite;
+  background-color: rgba(255, 255, 255, 0.657);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -131,7 +267,8 @@ body {
 .form-container {
   width: 200px;
   position: absolute;
-  top: 390px;
+  top: 20px;
+  right: 20px;
   display: flex;
   align-self: flex-end;
   flex-direction: column;

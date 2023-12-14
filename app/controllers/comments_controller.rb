@@ -4,7 +4,7 @@ class CommentsController < ApplicationController
     @comment = @post.comments.build(comment_params.merge(user_id: current_user.id))
 
     if @comment.save
-      redirect_to @post, notice: 'Comment was successfully created.'
+      redirect_to user_post_path(@post.author, @post), notice: 'Comment was successfully created.'
     else
       render :new
     end

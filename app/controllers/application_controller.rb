@@ -1,10 +1,5 @@
 class ApplicationController < ActionController::Base
   before_action :configure_permitted_parameters, if: :devise_controller?
-  helper_method :current_user
-
-  def current_user
-    @current_user ||= User.first
-  end
 
   protected
 

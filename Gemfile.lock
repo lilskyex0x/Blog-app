@@ -290,7 +290,7 @@ PLATFORMS
 
 DEPENDENCIES
   bootsnap
-  capybara
+  capybara (>= 2.15)
   debug
   faker
   importmap-rails

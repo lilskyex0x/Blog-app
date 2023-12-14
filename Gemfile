@@ -6,8 +6,6 @@ ruby '3.2.2'
 
 gem 'faker'
 
-gem 'font-awesome-sass', '~> 5.15.4'
-
 gem 'rails-controller-testing'
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
@@ -70,7 +68,7 @@ end
 
 group :test do
   # Use system testing [https://guides.rubyonrails.org/testing.html#system-testing]
-  gem 'capybara'
+  gem 'capybara', '>= 2.15'
   gem 'rspec-rails'
   gem 'selenium-webdriver'
 end

@@ -118,6 +118,12 @@ No tests available.
 - GitHub: [@lilskyex0x](https://github.com/lilskyex0x)
 - LinkedIn: [Aung Pyae Khant](https://www.linkedin.com/in/aung-pyae-khant-932342251)
 
+👤 **Lawmsangi Varte**
+
+- GitHub: [@githubhandle](https://github.com/Lawmsangi)
+- Twitter: [@twitterhandle](https://twitter.com/mamy_22_zayn)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/lawmsangi-varte-baa429244/)
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FUTURE FEATURES -->

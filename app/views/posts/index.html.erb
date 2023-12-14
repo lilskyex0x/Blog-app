@@ -12,6 +12,7 @@
                 <% end %>
                 <h1><%= @user.name %>'s Posts</h1>
             </div>
+            <p class = 'user-show-numPost'>Total Posts: <%= @posts.count %></p>
             <!-- Form for creating a new post -->
             <%= form_for @new_post, url: user_posts_path(@user), html: { class: "form-container" } do |f| %>
                 <%= f.label :title %>

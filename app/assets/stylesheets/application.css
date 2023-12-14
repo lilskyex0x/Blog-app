@@ -113,6 +113,12 @@ body {
   font-size: 3rem;
 }
 
+.user-show-numPost {
+  font-size: 1rem;
+  font-style: italic;
+  color: #888;
+}
+
 .allPost-info {
   display: flex;
   flex-direction: row;
@@ -149,7 +155,7 @@ body {
 
 .like-cmt-container {
   position: absolute;
-  top: 167px;
+  top: 30px;
   right: 32px;
   display: flex;
   flex-direction: column;
